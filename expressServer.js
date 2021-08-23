@@ -5,8 +5,8 @@ app.use(morgan('dev'));//middleware first pass to console log and then to handle
 app.use(express.static('public'));
 
 app.get('/',(req,res)=>{
-    res.sendFile('index.html');
-    //res.send("welcome to express server home");
+   // res.sendFile('index.html');
+    res.send("welcome to express server home");
 })
 app.get('/contacts',(req,response)=>{//deliberatly used res as response t hanle error
     res.send("contact info");
